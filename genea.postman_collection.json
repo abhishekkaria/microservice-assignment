@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "d133b3e9-d5a5-4e5b-8311-a6ed837edd35",
+		"name": "genea",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32900773"
+	},
+	"item": [
+		{
+			"name": "producer-service-api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "csvData",
+							"type": "file",
+							"src": "/C:/Users/LENOVO/Downloads/employee.csv - employee.csv.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/upload-csv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"upload-csv"
+					]
+				},
+				"description": "api to upload csv file"
+			},
+			"response": []
+		},
+		{
+			"name": "query-service-api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/employees?email=jane.doe@example.com&company=XYZ Enterprises&page=1&pageSize=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "jane.doe@example.com"
+						},
+						{
+							"key": "company",
+							"value": "XYZ Enterprises"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "1"
+						}
+					]
+				},
+				"description": "api to get employees"
+			},
+			"response": []
+		}
+	]
+}
