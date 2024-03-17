@@ -5,7 +5,7 @@ writing this as a part of assesment
 
 # Microservices Patterns with Node.js
 
-This Project covers Shared Database Service Pattern, Messaging Pattern for communication (RabbitMQ). Aggregator Patters for cross db join.
+This Project covers Shared Database Service Pattern, Messaging Pattern for communication (RabbitMQ).
 
 
 ## Tech Stack
@@ -53,7 +53,7 @@ Port, RabbitMQ, MongoDB and other details can be configured through .env file of
 
 ## Running the Services
 
-In each service folder (`aggregator-service/`, `comment-service/`, `user-service/`, `post-service/`), run the following command to install dependencies:
+In each service folder (`producer-service/`, `consumer-service/`, `query-service/`), run the following command to install dependencies:
 
 ```bash
 cd microservice-assesment  # Navigate to microservice-assesment folder
